@@ -32,13 +32,6 @@ The app provides a lightweight order form with:
 - `UpdateToppings()` builds a human-readable toppings list
 - `DisableAfterConfirmOrder()` locks the order form after confirmation
 
-## Files of Interest
-
-- `Form1.cs` - Main form logic and event handlers
-- `Form1.Designer.cs` - UI layout and control definitions
-- `Program.cs` - Application entry point
-- `PizzaOrder.sln` - Visual Studio solution file
-
 ## Running the Project
 
 1. Open `PizzaOrder.sln` in Visual Studio.
