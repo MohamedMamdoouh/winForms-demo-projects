@@ -1,103 +1,28 @@
-# Pool Club - Sports Club Management System
+# Pool Club - WinForms Pool Table Tracker
 
-Complete management system for sports and recreation clubs with member management, facility booking, and billing.
+A Windows Forms demo app that tracks play time and calculates fees for multiple pool tables.
 
-## 📁 System Overview
+## Features
 
-Comprehensive club management solution:
+- Custom pool table user control with:
+  - Start / Stop timer button
+  - Play time
+  - End button to compute total charge
+- Fee calculation based on an hourly rate
+- Aggregated play completion event handling
+- Multiple table controls on a single form
+- Simple UI for monitoring time usage and fees
 
-- Member registration and profiles
-- Facility management and scheduling
-- Reservation and booking system
-- Membership tiers and billing
-- Event management
-- Staff and trainer management
-- Financial reporting
+## Files of Interest
 
-## 🎯 Core Modules
+- `frmPoolClub.cs` - Main form that hosts the pool table controls.
+- `ctrlPool.cs` - Custom user control implementing the timer and billing logic.
+- `Program.cs` - Application entry point.
+- `Pool Club.csproj` - Project file.
 
-### Member Management
+## Running the Project
 
-- Member registration and profiles
-- Membership tiers (basic, premium, VIP)
-- Subscription management
-- Member history
-- Contact information
-
-### Facilities
-
-- Pool areas and lanes
-- Gym equipment
-- Courts (tennis, badminton, etc.)
-- Training rooms
-- Facility capacity management
-
-### Reservations
-
-- Booking system for facilities
-- Time slot management
-- Cancellation policies
-- Waiting list management
-- Recurring bookings
-
-### Memberships & Billing
-
-- Membership plans
-- Subscription pricing
-- Payment tracking
-- Invoice generation
-- Late fee management
-- Renewal reminders
-
-### Staff & Trainers
-
-- Staff profiles
-- Trainer specializations
-- Staff scheduling
-- Training sessions
-- Performance tracking
-
-### Events
-
-- Event creation and scheduling
-- Event registration
-- Capacity management
-- Fee tracking
-- Reports and analytics
-
-## 🛠️ Technologies
-
-- ASP.NET Core
-- Entity Framework Core
-- SQL Server
-- C#
-- Bootstrap UI
-
-## 📊 Key Features
-
-- Member authentication
-- Real-time availability checking
-- Automated billing
-- Payment processing
-- Multi-facility support
-- Access control
-
-## 🚀 Getting Started
-
-1. Configure database
-2. Run migrations
-3. Set up membership plans and facilities
-4. Create admin account
-5. Start application
-
-## 💰 Billing Features
-
-- Flexible membership plans
-- Automated recurring billing
-- Payment gateway integration
-- Receipt generation
-- Financial reporting
-
----
-
-Study the reservation and billing logic for subscription-based systems.
+1. Open `Pool Club.sln` in Visual Studio.
+2. Build the solution.
+3. Run the `Pool Club` project.
+4. Use the table controls to start and end play sessions.

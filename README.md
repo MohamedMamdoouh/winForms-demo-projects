@@ -26,8 +26,3 @@ This repository contains a set of Windows Forms demo applications built with C#.
 2. Restore any NuGet packages if prompted.
 3. Set the desired project as the startup project.
 4. Build and run the application.
-
-## Notes
-
-- The repository is intended for learning and experimentation with Windows Forms.
-- The `.gitignore` file is configured to exclude build artifacts, IDE settings, and temporary files.

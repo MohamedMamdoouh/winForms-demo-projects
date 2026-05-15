@@ -1,92 +1,32 @@
-# Traffic Lights - Traffic Control Simulation System
+# Traffic Lights - WinForms Traffic Signal Demo
 
-Real-time traffic simulation with traffic light logic, vehicle movement, and congestion management.
+A Windows Forms demo application that simulates a traffic signal controller using custom traffic light controls. The solution switches between four signal phases for two opposing directions and updates the light state with a timer.
 
-## 📁 System Overview
+## Project Behavior
 
-Intelligent traffic management simulation:
+- The main form hosts four `ctrlTrafficLights` controls.
+- Traffic phases cycle in this order:
+  1. North/South turns green while East/West is red
+  2. North/South turns yellow while East/West remains red
+  3. East/West turns green while North/South is red
+  4. East/West turns yellow while North/South remains red
+- Each phase duration is configured per control using green, yellow, and red timer values.
+- The form uses a shared timer (`LightTimer`) to move through the phases automatically.
 
-- Traffic light logic and timing
-- Vehicle simulation and movement
-- Intersection management
-- Congestion detection
-- Real-time visualization
-- Traffic optimization
-- Performance metrics
+- `ctrlTrafficLights.cs`
+  - Defines a custom user control for an individual traffic light.
+  - Supports explicit methods: `MakeLightRed()`, `MakeLightYellow()`, and `MakeLightGreen()`.
+  - Uses a local timer to update the light countdown display.
+  - Raises events when each light color becomes active.
 
-## 🎯 Core Features
+## Running the Project
 
-### Traffic Light Management
+1. Open `TrafficLights.sln` in Visual Studio.
+2. Build the solution.
+3. Run the `Traffic Lights` application.
+4. Observe the light states change automatically through red, green, and yellow phases.
 
-- Signal timing logic
-- Adaptive light timing
-- Pedestrian crossing management
-- Emergency vehicle priority
-- Light state transitions
+## Notes
 
-### Vehicle Simulation
-
-- Vehicle generation and routing
-- Movement algorithms
-- Speed management
-- Queue management
-- Accident simulation
-
-### Intersection Control
-
-- Multiple intersection support
-- Signal coordination
-- Traffic flow optimization
-- Emergency handling
-
-### Monitoring & Analytics
-
-- Real-time vehicle counting
-- Queue length tracking
-- Wait time calculation
-- Throughput metrics
-- Congestion alerts
-
-### Visualization
-
-- Real-time display of traffic
-- Traffic light states
-- Vehicle positions
-- Performance metrics
-- Historical data
-
-## 🛠️ Technologies
-
-- C# / .NET
-- Real-time algorithms
-- Data structures (queues, graphs)
-- Windows Forms or WPF for visualization
-- Performance optimization
-
-## 🚀 Getting Started
-
-1. Build and run the simulation
-2. Observe traffic light behavior
-3. Monitor vehicle flow and congestion
-4. Experiment with timing adjustments
-5. Analyze performance metrics
-
-## 🧮 Algorithms
-
-- FIFO queue processing
-- Signal state machines
-- Vehicle routing algorithms
-- Congestion detection
-- Wait time calculation
-
-## 📊 Metrics
-
-- Vehicles per minute
-- Average wait time
-- Queue length
-- Light utilization
-- System throughput
-
----
-
-Study the state machine and queue management for real-time systems.
+- Light durations are currently hardcoded in `ctrlTrafficLights`.
+- The demo is intended to show WinForms custom controls, timer-based state changes, and basic traffic signal phase sequencing.
