@@ -1,0 +1,24 @@
+# C# / .NET
+bin/
+obj/
+.vs/
+*.csproj.user
+*.sln.user
+*.DotSettings.user
+
+# IDE and Editors
+.vscode/
+.idea/
+
+# Environment
+.env
+appsettings.Development.json
+
+# Database
+*.db
+*.mdf
+*.ldf
+
+# Misc
+.DS_Store
+Thumbs.db

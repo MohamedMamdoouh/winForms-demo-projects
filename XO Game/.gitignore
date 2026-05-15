@@ -1,0 +1,19 @@
+# C# / .NET
+bin/
+obj/
+.vs/
+*.csproj.user
+*.sln.user
+*.DotSettings.user
+
+# IDE and Editors
+.vscode/
+.idea/
+
+# Game Data
+saves/
+*.sav
+
+# Misc
+.DS_Store
+Thumbs.db
