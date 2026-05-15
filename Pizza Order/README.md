@@ -1,4 +1,4 @@
-# Pizza Order - Food Ordering & Delivery System
+# Pizza Order - Food Ordering
 
 A simple pizza ordering system with menu management.
 
